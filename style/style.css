@@ -1,0 +1,171 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: relative;
+  top: 100px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+:root {
+  /* Primary */
+
+  --Very-Dark-Magenta: hsl(300, 43%, 22%);
+  --Soft-Pink: hsl(333, 80%, 67%);
+
+  /* Neutral */
+
+  --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+  --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 15px;
+  font-family: "League Spartan", sans-serif;
+  background: url("../images/bg-pattern-top-desktop.svg") no-repeat, url("../images/bg-pattern-bottom-desktop.svg") no-repeat;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto 5rem auto;
+}
+
+/*----------------- Top content ----------------*/
+.top-content {
+  position: relative;
+  top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-text {
+  flex-basis: 50%;
+}
+
+.main-text h1 {
+  color: var(--Very-Dark-Magenta);
+  font-size: 3.3em;
+  font-weight: 700;
+}
+
+.main-text p {
+  color: var(--Dark-Grayish-Magenta);
+  line-height: 150%;
+}
+
+.ratting {
+  background-color: var(--Light-Grayish-Magenta);
+  display: flex;
+  margin-bottom: 1em;
+  padding: 1em 2em;
+  border-radius: 5px;
+  position: relative;
+}
+.ratting p {
+  color: var(--Very-Dark-Magenta);
+  font-weight: bold;
+  margin-left: 1.5em;
+  display: flex;
+  align-items: center;
+}
+
+.ratting-1 {
+  right: 90px;
+}
+.ratting-2 {
+  right: 45px;
+}
+
+/*----------------- Bottom content  ----------------*/
+
+.bottom-content {
+  display: flex;
+  position: relative;
+  top: 100px;
+}
+
+.card {
+  background-color: var(--Very-Dark-Magenta);
+  width: 350px;
+  padding: 2em;
+  border-radius: 7px;
+  position: relative;
+}
+
+.card-2 {
+  top: 1em;
+  margin: 0 2em 0 2em;
+}
+.card-3 {
+  top: 2em;
+}
+
+.card-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card-info .card-img img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.card-info .info {
+  margin-left: 1.5em;
+  line-height: 150%;
+}
+
+.card-info .info h2 {
+  color: var(--White);
+  font-size: 1.1em;
+}
+
+.card-info .info p {
+  color: var(--Soft-Pink);
+}
+
+.card-content p {
+  color: var(--White);
+  line-height: 120%;
+}
+
+@media (max-width:768px) {
+  body {
+    background: url("../images/bg-pattern-top-mobile.svg") no-repeat, url("../images/bg-pattern-bottom-mobile.svg") no-repeat;
+  }
+  .top-content {
+    flex-direction: column;
+  }
+  .main-text {
+    text-align: center;
+    margin-bottom: 2em;
+  }
+  .ratting {
+    position: relative;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .ratting .img-star {
+    margin-bottom: 10px;
+  }
+  .bottom-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 100%;
+  }
+}
